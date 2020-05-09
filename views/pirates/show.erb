@@ -5,3 +5,20 @@
 
 
 <h2>Display your second ship here</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pirate!</title>
+  </head>
+  <body>
+    <p><%= @pirate.name %></p>
+    <p><%= @pirate.height %></p>
+    <p><%= @pirate.weight %></p>
+
+    <p><% @ships.each do |ship| %>
+      <%= ship.name %>
+      <%= ship.type %>
+      <%= ship.booty %>
+    <% end %></p>
+  </body>
+</html>
